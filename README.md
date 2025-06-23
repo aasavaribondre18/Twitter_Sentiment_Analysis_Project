@@ -1,14 +1,12 @@
 # Twitter_Sentiment_Analysis_Project
 
- 📁 Prepare Project Folder Locally
-
-Structure  project folder like this:
-
 
 📊 Twitter Sentiment Analysis Dashboard
 
 Track public opinion on Nike and Adidas using real-time Twitter data, NLP, and Power BI.
 
+
+![Twitter_img](https://github.com/user-attachments/assets/4c6ecdd4-be0e-4707-8526-71b7dc168ca9)
 
 ---
 
