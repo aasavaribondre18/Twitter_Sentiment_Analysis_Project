@@ -1,0 +1,25 @@
+
+-- 💡 DAX Formulas for Power BI Sentiment Dashboard
+
+Total Tweets = COUNT('sentiment_logs'[Tweet])
+
+Positive Tweets = 
+CALCULATE(COUNTROWS('sentiment_logs'), 'sentiment_logs'[Sentiment] = "Positive")
+
+Negative Tweets = 
+CALCULATE(COUNTROWS('sentiment_logs'), 'sentiment_logs'[Sentiment] = "Negative")
+
+Neutral Tweets = 
+CALCULATE(COUNTROWS('sentiment_logs'), 'sentiment_logs'[Sentiment] = "Neutral")
+
+Positive % = 
+DIVIDE(
+    CALCULATE(COUNTROWS('sentiment_logs'), 'sentiment_logs'[Sentiment] = "Positive"),
+    COUNTROWS('sentiment_logs')
+)
+
+Negative % = 
+DIVIDE(
+    CALCULATE(COUNTROWS('sentiment_logs'), 'sentiment_logs'[Sentiment] = "Negative"),
+    COUNTROWS('sentiment_logs')
+)
